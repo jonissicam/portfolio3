@@ -7,7 +7,7 @@ require_once("../partials/contact.php");
 		<section class="row no-gutters">
 			<div class="col-lg-8 mt-5">
 				<div class="jumbotron bg-transparent">
-					<h1 class="display-4 text-light">“Create the highest, grandest vision possible for your life, because you become what you believe”</h1>
+					<h1 id="qoute" class="display-4 text-light">“Create the highest, grandest vision possible for your life, because you become what you believe”</h1>
 				</div>
 			</div>
 			<div class="col-lg-4">

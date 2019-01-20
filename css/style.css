@@ -14,6 +14,12 @@ body{
 
 }
 
+.closebtn{
+	font-size: 30px;
+}
+a[onclick="closeNav()"]{
+	text-decoration: none;
+}
 .header{
 	min-height: 100%;
 	margin-bottom: -55px;
@@ -88,7 +94,7 @@ body{
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   top: 0; /* Stay at the top */
-  left: 0;
+  right: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -96,7 +102,14 @@ body{
   padding-right: 0;
   padding-left: 0;
 }
-
+@media only screen and (width: 320px) {
+	#welcome{
+		font-size: 17px;
+	}
+	#qoute{
+		font-size: 28px;
+	}
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -104,6 +117,37 @@ body{
     width: 85px;
     height: 85px;
   }
+  .navbar{
+  	padding-right: 10px;
+  	padding-left: 5px;
+  }
+  #qoute{
+		font-size: 28px;
+	}
+	#project1,
+	#project2,
+	#project3{
+		font-size: 30px;
+		   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
+	.linksbtn2{
+		padding-top: 15px;
+		padding-right: 15px;
+		font-size: 25px;
+		   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
   .demoMob1{
 	background-image: url("../images/wakwak.png");
 	background-size: contain;
@@ -128,7 +172,6 @@ body{
 	.linksbtn,
 	.linksbtn2{
 		font-weight: bold;
-		font-size: 20px;
 		font-family: 'Roboto Slab', serif;
 	}
 	#navlink1,

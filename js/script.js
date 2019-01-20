@@ -36,8 +36,29 @@ $(document).ready(function () {
 
 	/* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "800px";
-document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	if (window.matchMedia("(max-width: 600px)").matches) {
+	document.getElementById("mySidenav").style.width = "100%";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}else if(window.matchMedia("(min-width: 601px) and (max-width: 768px)").matches){
+		document.getElementById("mySidenav").style.width = "400px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}else if(window.matchMedia("(min-width: 769px) and (max-width: 1024px)").matches){
+		document.getElementById("mySidenav").style.width = "600px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}else if(window.matchMedia("(min-width: 1025px) and (max-width: 1439px)").matches){
+		document.getElementById("mySidenav").style.width = "800px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}else if(window.matchMedia("(min-width: 1440px) and (max-width: 2559px)").matches){
+		document.getElementById("mySidenav").style.width = "700px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}else{
+		document.getElementById("mySidenav").style.width = "1000px";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+	}
+
+	$("*:not(#mySidenav)").click(function (e) {
+		e.preventDefault();
+	});
 }
 
 /* Set the width of the side navigation to 0 */

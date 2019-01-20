@@ -80,7 +80,7 @@ require_once("../partials/contact.php");
 			<p>Hello,my name is Jonis Bryan Sicam and I'm a Full Stack Web Developer.</p>
 			<p>I was born in Dasmariñas, Cavite</p>
 			<p>I graduated at Technological University of the Philippines-Cavite</p>
-			<a class="btn btn-outline-light" href="#">Contact</a>
+			<a class="btn btn-outline-light" onclick="openNav()">Contact</a>
 			<a class="btn text-light" href="./project.php">View projects</a>
 		</div>
 	</section>
