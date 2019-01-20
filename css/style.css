@@ -102,16 +102,47 @@ a[onclick="closeNav()"]{
   padding-right: 0;
   padding-left: 0;
 }
-.progress{
-  border-radius:0;
-  overflow:visible;
-}
-.progress-bar{
-   background:rgb(23,44,60); 
-  -webkit-transition: width 1.5s ease-in-out;
-  transition: width 1.5s ease-in-out;
+.progress {
+	height: 25px;
+  padding: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
 }
 
+.progress-bar {
+  height: 16px;
+  border-radius: 4px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+	#project1,
+	#project2,
+	#project3{
+		font-size: 30px;
+		   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
+	.linksbtn2{
+		padding-top: 15px;
+		padding-right: 15px;
+		font-size: 25px;
+		   color: white;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	}
 @media only screen and (width: 320px) {
 	#welcome{
 		font-size: 17px;

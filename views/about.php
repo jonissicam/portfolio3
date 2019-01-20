@@ -14,21 +14,21 @@ require_once("../partials/contact.php");
 		<div class="col-lg-4">
 			<div class="row no-gutters">
 				<div class="col-md-4 col-4 p-0">
-					<img class="img-fluid" src="../images/html.png" style="width: 90px;">
+					<img class="img-fluid" src="../images/html.png" style="width: 70px;">
 				</div>
 				<div class="col-md-8 col-8 p-0 mt-4">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
+					<div data-aos="fade-right" data-aos-duration="2000" class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;background-color: #86e01e;"></div>
 					</div>				
 				</div>
 			</div>
 			<div class="row no-gutters">
 				<div class="col-md-4 col-4 p-0">
-					<img class="img-fluid" src="../images/css.svg" style="width: 70px;">
+					<img class="img-fluid" src="../images/css.svg" style="width: 50px;">
 				</div>
 				<div class="col-md-8 col-8 p-0 mt-4">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
+					<div data-aos="fade-right" data-aos-duration="2000" class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;background-color: #86e01e;"></div>
 					</div>				
 				</div>
 			</div>
@@ -37,8 +37,8 @@ require_once("../partials/contact.php");
 					<img class="img-fluid" src="../images/javascript.png" style="width: 70px;">
 				</div>
 				<div class="col-md-8 col-8 p-0 mt-4">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
+					<div data-aos="fade-right" data-aos-duration="2000" class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 45%;background-color: #f2b01e;"></div>
 					</div>				
 				</div>
 			</div>	
@@ -47,8 +47,8 @@ require_once("../partials/contact.php");
 					<img class="img-fluid" src="../images/php.png" style="width: 70px;">
 				</div>
 				<div class="col-md-8 col-8 p-0 mt-4">
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
+					<div data-aos="fade-right" data-aos-duration="2000" class="progress">
+						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%;background-color: #f2b01e;"></div>
 					</div>				
 				</div>
 			</div>	
@@ -59,7 +59,7 @@ require_once("../partials/contact.php");
 				</div>
 				<div class="col-md-8 col-8 p-0 mt-4">
 					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
+						<div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="50" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;background-color: #f2b01e;"></div>
 					</div>				
 				</div>
 			</div>			

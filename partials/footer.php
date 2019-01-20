@@ -14,5 +14,9 @@
 </footer>
 
 	<script type="text/javascript" src="../js/script.js"></script>
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
