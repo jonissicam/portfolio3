@@ -10,8 +10,8 @@ require_once("../partials/contact.php");
 		<div id="project1demo" class="col-lg-4 demo demoMob1">
 			<a href="index.php" id="navlink1" class="text-light">Hello, Welcome to my Portfolio</a>
 			<a href="#" id="navlink2" class="text-light">Projects</a>
-			<a href="/acts/portfolio2/views/about.php" id="navlink3" class="text-light">About</a>
-			<a id="navlink4" class="text-light" onclick="openNav()">Contact</a>
+			<a href="about.php" id="navlink3" class="text-light">About</a>
+			<a id="navlink4" href="#" class="text-light" onclick="openNav()">Contact</a>
 				<a id="project1" class="text-light linksbtn" href="https://jonissicam.github.io/capstone1/" target="_blank">Project 1</a>
 				<p class="mt-4 text-light linksbtn2">Responsive Web Design</p>
 		</div>

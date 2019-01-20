@@ -63,7 +63,7 @@ require_once("../partials/contact.php");
 					</div>				
 				</div>
 			</div>			
-			<div class="row no-gutters">
+			<!-- <div class="row no-gutters">
 				<div class="col-md-4 col-4 p-0">
 					<img class="img-fluid" src="../images/arduino.png" style="width: 150px;">					
 				</div>
@@ -72,7 +72,7 @@ require_once("../partials/contact.php");
 						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;"></div>
 					</div>				
 				</div>
-			</div>			
+			</div>	 -->		
 			
 
 		</div>

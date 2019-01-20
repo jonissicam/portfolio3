@@ -102,6 +102,16 @@ a[onclick="closeNav()"]{
   padding-right: 0;
   padding-left: 0;
 }
+.progress{
+  border-radius:0;
+  overflow:visible;
+}
+.progress-bar{
+   background:rgb(23,44,60); 
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
 @media only screen and (width: 320px) {
 	#welcome{
 		font-size: 17px;
