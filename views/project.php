@@ -20,7 +20,7 @@ require_once("../partials/contact.php");
 				<p class="mt-4 text-light linksbtn2 pr-0">E-commerce Website</p>
 		</div>
 		<div id="project3demo" class="col-lg-4 demo demoMob3">
-				<a id="project3" class="text-light linksbtn" href="#">Project 3</a>
+				<a id="project3" class="text-light linksbtn" href="https://fast-reef-28416.herokuapp.com/" target="_blank">Project 3</a>
 				<p class="mt-4 text-light linksbtn2">Using Laravel framework</p>
 		</div>
 
