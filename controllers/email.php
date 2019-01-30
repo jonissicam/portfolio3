@@ -35,6 +35,6 @@ try{
 		$mail-> Send();
 	header("Location: ../index.php");
 }catch(Exception $e){
-	echo "Message could not be sent. Please try again";
+	echo "Message could not be sent. Please try again", $mail->ErrorInfo;;
 }
 ?>
