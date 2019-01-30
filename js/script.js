@@ -52,7 +52,7 @@ function openNav() {
 		document.getElementById("mySidenav").style.width = "700px";
 	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 	}else{
-		document.getElementById("mySidenav").style.width = "1000px";
+		document.getElementById("mySidenav").style.width = "500px";
 	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 	}
 

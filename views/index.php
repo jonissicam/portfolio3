@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("../partials/start_body.php");
 require_once("../partials/navbar.php");
 require_once("../partials/contact.php");
