@@ -1,25 +1,40 @@
 <?php 
+session_start();
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
+require '../vendor/autoload.php';
 
-// require 'vendor/autoload.php';
+$mail = new PHPMailer(true);
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$email = $_POST['email'];
+$customer_email = "jonissicam@gmail.com";
+$message = $_POST['message'];
 
-// $mail = new PHPMailer(true);
-// try{
-// 	$mail->isSMTP();
-// 	$mail->Host = "smtp.gmail.com";
-// 	$mail->Username = 'capstone2jonis@gmail.com';
-// 	$mail->Password = 'jonis54321';
-// 	$mail->SMTPSecure = 'tls';
-// 	$mail->Port = 587;
+$staff_email = "capstone2jonis@gmail.com";
+$body = "From: $email, <br> $message";
 
-// 	$mail->setFrom('capstone2jonis@gmail.com', 'Portfolio');
-// 	$mail->addAddress('jonissicam@gmail.com');
+try{
+	$mail-> isSMTP();
+		$mail-> Host = "smtp.gmail.com";
+		$mail-> SMTPAuth = true;
+		$mail-> Username = $staff_email;
+		$mail-> Password = "jonis54321";
+		$mail-> SMTPSecure = "tls"; // enable tls encryption
+		$mail-> Port = 587;
 
-// 	$mail->isHTML(true);
-// 	$mail->Subject = "Portfolio Notification";
-// 	$mail->Body = $_SESSION['message'];
-// }
-var_dump($_SESSION);
+		//recipient
+		$mail-> setFrom($staff_email, "$fname $lname");
+		$mail-> addAddress($customer_email);
+
+		$mail->isHTML(true);
+		$mail-> Subject = $fname;
+		$mail->	Body = $body;
+
+		$mail-> Send();
+	header("Location: ../index.php");
+}catch(Exception $e){
+	echo "Message could not be sent. Please try again";
+}
 ?>

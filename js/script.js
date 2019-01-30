@@ -56,9 +56,6 @@ function openNav() {
 	document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 	}
 
-	$("*:not(#mySidenav)").click(function (e) {
-		e.preventDefault();
-	});
 }
 
 /* Set the width of the side navigation to 0 */
@@ -66,3 +63,53 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "#964b15";
 }
+
+// function messageMe() {
+// 	let fname = $("#fname").val();
+// 	let lname = $("#lname").val();
+// 	let email = $("#email").val();
+// 	let message = $("#message").val();
+
+// 	let errors = 0;
+
+// 	if (message == "") {
+// 		$("#messageblank").next().text("Please provide valid message");
+// 		errors++;
+// 	}else{
+// 		$("#messageblank").next().text("");
+// 	}
+
+// 	if (errors > 0) {
+// 		return false;
+// 	}else{
+// 		return true;
+// 	}
+// }
+
+// $("#contactBtn").on("click", function () {
+// 	if (messageMe()) {
+// 	let fname = $("#fname").val();
+// 	let lname = $("#lname").val();
+// 	let email = $("#email").val();
+// 	let message = $("#message").val();
+
+// 		$.ajax({
+// 			url:"../controllers/email.php",
+// 			type:"POST",
+// 			data:{
+// 				"fname":fname,
+// 				"lname":lname,
+// 				"email":email,
+// 				"message":message,
+// 			},
+// 			"success": function (dataFromController) {
+// 				if (dataFromController == "success") {
+// 					$("#confirmation").text("Message Successfully sent!");
+// 				}else{
+// 					$("#confirmation").removeClass("text-success").addClass("emailfail");
+// 					$("#confirmation").text("Message did not send. Please try again.");
+// 				}
+// 			}
+// 		})
+// 	}
+// })
